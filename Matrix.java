@@ -1,4 +1,3 @@
-package com.gupta.test.resources;
 
 import java.util.ArrayList;
 import java.util.Arrays;
