@@ -70,7 +70,7 @@ public class FileWriter {
             String cordY = coords.get(1).toString();
             String cordZ = coords.get(2).toString();
             String d = coords.get(3).toString();
-            writer.write("\t\t\t"+ cordX + " " + cordY + " " + cordZ + "," + d + ", -1,");
+            writer.write("\t\t\t"+ cordX + ", " + cordY + ", " + cordZ + ", " + d + ", -1,");
             writer.newLine();
         }
 
@@ -91,8 +91,9 @@ public class FileWriter {
             writeCoordinates(writer, links.get(0));
             writeCoordinates(writer, links.get(1));
             writeCoordinates(writer, links.get(2));
+            writeCoordinates(writer, links.get(3));
             writeSpheres(writer);
-            writeSpheres(writer, links.get(3));
+            writeSpheres(writer, links.get(4));
 
 
         }

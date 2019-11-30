@@ -23,6 +23,7 @@ public class Main {
 
         Stack<Matrix> stack = new Stack<>();
         List<Matrix> newLinks = new ArrayList<>();
+        newLinks.add(matrixL0);
 
         List<List<Double>> M = new ArrayList<>();
         Matrix translateMatrix = new AllMatrices().translate(Arrays.asList(0.0, 0.0, 1.0));
